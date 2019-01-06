@@ -8,14 +8,14 @@ services:
     networks:
       - bugatti-net
     ports:
-      - "80:80"
+      - "3001:80"
     labels:
       - "traefik.backend=bugatti-web"
       - "traefik.docker.network=bugatti-net"
       - "traefik.enable=true"
       - "traefik.protocol=http"
       - "traefik.frontend.rule=Host:www.thegc.cf"
-      - "traefik.port=80"
+      - "traefik.port=3001"
 networks:
   bugatti-net:
     external: true
