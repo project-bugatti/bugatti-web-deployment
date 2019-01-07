@@ -15,7 +15,7 @@ services:
       - "traefik.enable=true"
       - "traefik.protocol=http"
       - "traefik.frontend.rule=Host:www.thegc.cf"
-      - "traefik.port=3001"
+      - "traefik.port=80"
 networks:
   bugatti-net:
     external: true
